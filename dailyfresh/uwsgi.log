@@ -1,0 +1,1831 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 11:02:35 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.125.128:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41975 (port auto-assigned) fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55bbc53097c0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55bbc53097c0 pid: 7856 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7856)
+spawned uWSGI worker 1 (pid: 7858, cores: 2)
+spawned uWSGI worker 2 (pid: 7860, cores: 2)
+spawned uWSGI worker 3 (pid: 7861, cores: 2)
+spawned uWSGI worker 4 (pid: 7862, cores: 2)
+spawned uWSGI http 1 (pid: 7864)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 7862|app: 0|req: 1/1] 192.168.125.1 () {38 vars in 837 bytes} [Fri Dec 18 11:03:17 2020] GET /index => generated 12769 bytes in 256 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7858|app: 0|req: 1/2] 192.168.125.1 () {38 vars in 778 bytes} [Fri Dec 18 11:03:18 2020] GET /favicon.ico => generated 3050 bytes in 228 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 7858|app: 0|req: 2/3] 192.168.125.1 () {40 vars in 886 bytes} [Fri Dec 18 11:03:28 2020] GET /index => generated 12769 bytes in 80 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7861|app: 0|req: 1/4] 192.168.125.1 () {40 vars in 894 bytes} [Fri Dec 18 11:03:32 2020] GET /cart/cart => generated 8210 bytes in 247 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 7858|app: 0|req: 3/5] 192.168.125.1 () {40 vars in 890 bytes} [Fri Dec 18 11:03:35 2020] GET /index => generated 12769 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 草莓
+[pid: 7862|app: 0|req: 2/6] 192.168.125.1 () {40 vars in 890 bytes} [Fri Dec 18 11:03:36 2020] GET /goods/7 => generated 8764 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 鱼
+[pid: 7862|app: 0|req: 3/7] 192.168.125.1 () {40 vars in 892 bytes} [Fri Dec 18 11:03:40 2020] GET /goods/16 => generated 7261 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 红提
+[pid: 7860|app: 0|req: 1/8] 192.168.125.1 () {40 vars in 892 bytes} [Fri Dec 18 11:03:52 2020] GET /goods/21 => generated 8751 bytes in 242 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 7862|app: 0|req: 4/9] 192.168.125.1 () {40 vars in 889 bytes} [Fri Dec 18 11:03:57 2020] GET /index => generated 12769 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 7864)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:01:30 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55f9b55656e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f9b55656e0 pid: 8585 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8585)
+spawned uWSGI worker 1 (pid: 8587, cores: 2)
+spawned uWSGI worker 2 (pid: 8588, cores: 2)
+spawned uWSGI worker 3 (pid: 8589, cores: 2)
+spawned uWSGI worker 4 (pid: 8591, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:01:59 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55fb7c8516e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55fb7c8516e0 pid: 8609 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8609)
+spawned uWSGI worker 1 (pid: 8611, cores: 2)
+spawned uWSGI worker 2 (pid: 8612, cores: 2)
+spawned uWSGI worker 3 (pid: 8613, cores: 2)
+spawned uWSGI worker 4 (pid: 8615, cores: 2)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 8611|app: 0|req: 1/1] 192.168.125.1 () {42 vars in 906 bytes} [Fri Dec 18 12:02:11 2020] GET /index => generated 12769 bytes in 294 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 8612|app: 0|req: 1/2] 192.168.125.1 () {44 vars in 864 bytes} [Fri Dec 18 12:02:11 2020] GET /favicon.ico => generated 85 bytes in 251 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8615|app: 0|req: 1/3] 192.168.125.1 () {40 vars in 783 bytes} [Fri Dec 18 12:03:16 2020] GET /js/jquery-1.12.4.min.js => generated 97 bytes in 201 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8613|app: 0|req: 1/4] 192.168.125.1 () {40 vars in 767 bytes} [Fri Dec 18 12:03:16 2020] GET /js/slideshow.js => generated 89 bytes in 211 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8615|app: 0|req: 2/5] 192.168.125.1 () {40 vars in 783 bytes} [Fri Dec 18 12:09:49 2020] GET /js/jquery-1.12.4.min.js => generated 97 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 8611|app: 0|req: 2/6] 192.168.125.1 () {40 vars in 767 bytes} [Fri Dec 18 12:09:49 2020] GET /js/slideshow.js => generated 89 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 8611|app: 0|req: 3/7] 192.168.125.1 () {40 vars in 875 bytes} [Fri Dec 18 12:10:09 2020] GET /index => generated 12769 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:14:18 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8081  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x56426d51c6f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56426d51c6f0 pid: 8727 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8727)
+spawned uWSGI worker 1 (pid: 8729, cores: 2)
+spawned uWSGI worker 2 (pid: 8730, cores: 2)
+spawned uWSGI worker 3 (pid: 8731, cores: 2)
+spawned uWSGI worker 4 (pid: 8732, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:27:30 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55fe335466f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55fe335466f0 pid: 8960 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8960)
+spawned uWSGI worker 1 (pid: 8962, cores: 2)
+spawned uWSGI worker 2 (pid: 8963, cores: 2)
+spawned uWSGI worker 3 (pid: 8964, cores: 2)
+spawned uWSGI worker 4 (pid: 8966, cores: 2)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:27:43 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8081  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55590167c6f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55590167c6f0 pid: 8974 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8974)
+spawned uWSGI worker 1 (pid: 8976, cores: 2)
+spawned uWSGI worker 2 (pid: 8977, cores: 2)
+spawned uWSGI worker 3 (pid: 8978, cores: 2)
+spawned uWSGI worker 4 (pid: 8980, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:31:44 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x5633a78ec6f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5633a78ec6f0 pid: 9076 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9076)
+spawned uWSGI worker 1 (pid: 9078, cores: 2)
+spawned uWSGI worker 2 (pid: 9079, cores: 2)
+spawned uWSGI worker 3 (pid: 9080, cores: 2)
+spawned uWSGI worker 4 (pid: 9082, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9078|app: 0|req: 1/1] 192.168.125.1 () {40 vars in 875 bytes} [Fri Dec 18 12:33:02 2020] GET /index => generated 12769 bytes in 261 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 9082|app: 0|req: 1/2] 192.168.125.1 () {40 vars in 811 bytes} [Fri Dec 18 12:33:02 2020] GET /favicon.ico => generated 85 bytes in 186 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+sku 圣女果
+[pid: 9080|app: 0|req: 1/3] 192.168.125.1 () {42 vars in 925 bytes} [Fri Dec 18 12:34:23 2020] GET /goods/28 => generated 8760 bytes in 231 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9082|app: 0|req: 2/4] 192.168.125.1 () {42 vars in 922 bytes} [Fri Dec 18 12:34:28 2020] GET /index => generated 12769 bytes in 86 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9078|app: 0|req: 2/5] 192.168.125.1 () {42 vars in 899 bytes} [Fri Dec 18 12:36:52 2020] GET /index => generated 12769 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9080|app: 0|req: 2/6] 192.168.125.1 () {42 vars in 906 bytes} [Fri Dec 18 12:38:17 2020] GET /index => generated 12769 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9082|app: 0|req: 3/7] 192.168.125.1 () {42 vars in 919 bytes} [Fri Dec 18 12:38:20 2020] GET /index => generated 12769 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:39:26 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55d18d4bd6f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d18d4bd6f0 pid: 9195 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9195)
+spawned uWSGI worker 1 (pid: 9197, cores: 2)
+spawned uWSGI worker 2 (pid: 9198, cores: 2)
+spawned uWSGI worker 3 (pid: 9199, cores: 2)
+spawned uWSGI worker 4 (pid: 9201, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:49:23 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x557a5494b6f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557a5494b6f0 pid: 9264 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9264)
+spawned uWSGI worker 1 (pid: 9266, cores: 2)
+spawned uWSGI worker 2 (pid: 9267, cores: 2)
+spawned uWSGI worker 3 (pid: 9269, cores: 2)
+spawned uWSGI worker 4 (pid: 9270, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:53:19 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x556a9b0086f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556a9b0086f0 pid: 9584 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9584)
+spawned uWSGI worker 1 (pid: 9586, cores: 2)
+spawned uWSGI worker 2 (pid: 9587, cores: 2)
+spawned uWSGI worker 3 (pid: 9588, cores: 2)
+spawned uWSGI worker 4 (pid: 9590, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:54:09 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x5617e5d266f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5617e5d266f0 pid: 9606 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9606)
+spawned uWSGI worker 1 (pid: 9608, cores: 2)
+spawned uWSGI worker 2 (pid: 9609, cores: 2)
+spawned uWSGI worker 3 (pid: 9610, cores: 2)
+spawned uWSGI worker 4 (pid: 9612, cores: 2)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9608|app: 0|req: 1/1] 192.168.125.1 () {42 vars in 906 bytes} [Fri Dec 18 12:54:17 2020] GET /index => generated 12769 bytes in 285 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:58:42 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x559b45df56f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559b45df56f0 pid: 9643 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9643)
+spawned uWSGI worker 1 (pid: 9645, cores: 2)
+spawned uWSGI worker 2 (pid: 9646, cores: 2)
+spawned uWSGI worker 3 (pid: 9648, cores: 2)
+spawned uWSGI worker 4 (pid: 9649, cores: 2)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9649|app: 0|req: 1/1] 192.168.125.1 () {40 vars in 875 bytes} [Fri Dec 18 12:58:52 2020] GET /index => generated 12769 bytes in 265 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 12:59:20 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x56487ebf56f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56487ebf56f0 pid: 9667 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9667)
+spawned uWSGI worker 1 (pid: 9669, cores: 2)
+spawned uWSGI worker 2 (pid: 9670, cores: 2)
+spawned uWSGI worker 3 (pid: 9671, cores: 2)
+spawned uWSGI worker 4 (pid: 9673, cores: 2)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9671|app: 0|req: 1/1] 192.168.125.1 () {40 vars in 875 bytes} [Fri Dec 18 13:00:49 2020] GET /index => generated 12769 bytes in 254 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 草莓
+[pid: 9645|app: 0|req: 1/2] 192.168.125.1 () {42 vars in 923 bytes} [Fri Dec 18 13:01:20 2020] GET /goods/7 => generated 8764 bytes in 232 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 红提
+[pid: 9673|app: 0|req: 1/2] 192.168.125.1 () {42 vars in 925 bytes} [Fri Dec 18 13:01:25 2020] GET /goods/21 => generated 8751 bytes in 239 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 红提
+[pid: 9646|app: 0|req: 1/3] 192.168.125.1 () {42 vars in 928 bytes} [Fri Dec 18 13:01:27 2020] GET /goods/22 => generated 8751 bytes in 243 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9673|app: 0|req: 2/3] 192.168.125.1 () {42 vars in 922 bytes} [Fri Dec 18 13:01:30 2020] GET /index => generated 12769 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 柠檬
+[pid: 9645|app: 0|req: 2/4] 192.168.125.1 () {42 vars in 925 bytes} [Fri Dec 18 13:01:31 2020] GET /goods/14 => generated 8763 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9670|app: 0|req: 1/4] 192.168.125.1 () {42 vars in 922 bytes} [Fri Dec 18 13:01:32 2020] GET /index => generated 12769 bytes in 322 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 扇贝
+[pid: 9645|app: 0|req: 3/5] 192.168.125.1 () {42 vars in 925 bytes} [Fri Dec 18 13:01:34 2020] GET /goods/17 => generated 7286 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9673|app: 0|req: 3/5] 192.168.125.1 () {42 vars in 922 bytes} [Fri Dec 18 13:01:35 2020] GET /index => generated 12769 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 13:03:32 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8079  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x557150af86e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557150af86e0 pid: 9730 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9730)
+spawned uWSGI worker 1 (pid: 9733, cores: 2)
+spawned uWSGI worker 2 (pid: 9734, cores: 2)
+spawned uWSGI worker 3 (pid: 9735, cores: 2)
+spawned uWSGI worker 4 (pid: 9736, cores: 2)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 13:03:42 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55997d3576e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55997d3576e0 pid: 9752 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9752)
+spawned uWSGI worker 1 (pid: 9754, cores: 2)
+spawned uWSGI worker 2 (pid: 9755, cores: 2)
+spawned uWSGI worker 3 (pid: 9757, cores: 2)
+spawned uWSGI worker 4 (pid: 9758, cores: 2)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9758|app: 0|req: 1/1] 192.168.125.1 () {44 vars in 953 bytes} [Fri Dec 18 13:03:51 2020] GET /index => generated 12769 bytes in 291 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Dec 18 13:05:02 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x5644384416e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5644384416e0 pid: 9779 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9779)
+spawned uWSGI worker 1 (pid: 9781, cores: 2)
+spawned uWSGI worker 2 (pid: 9782, cores: 2)
+spawned uWSGI worker 3 (pid: 9783, cores: 2)
+spawned uWSGI worker 4 (pid: 9784, cores: 2)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9781|app: 0|req: 1/1] 192.168.125.1 () {44 vars in 953 bytes} [Fri Dec 18 13:06:02 2020] GET /index => generated 12769 bytes in 293 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 柠檬
+[pid: 9784|app: 0|req: 1/2] 192.168.125.1 () {42 vars in 927 bytes} [Fri Dec 18 13:06:07 2020] GET /goods/14 => generated 8763 bytes in 230 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 柠檬
+[pid: 9781|app: 0|req: 2/3] 192.168.125.1 () {42 vars in 928 bytes} [Fri Dec 18 13:06:12 2020] GET /goods/14 => generated 8763 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9783|app: 0|req: 1/4] 192.168.125.1 () {42 vars in 899 bytes} [Fri Dec 18 13:10:24 2020] GET /index => generated 12769 bytes in 240 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 9784|app: 0|req: 2/5] 192.168.125.1 () {42 vars in 919 bytes} [Fri Dec 18 13:10:42 2020] GET /index => generated 12769 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 草莓
+[pid: 9782|app: 0|req: 1/6] 192.168.125.1 () {42 vars in 923 bytes} [Fri Dec 18 13:12:03 2020] GET /goods/7 => generated 8764 bytes in 233 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 柠檬
+[pid: 9782|app: 0|req: 2/7] 192.168.125.1 () {42 vars in 928 bytes} [Fri Dec 18 13:12:07 2020] GET /goods/14 => generated 8763 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 9781|app: 0|req: 3/8] 192.168.125.1 () {40 vars in 806 bytes} [Mon Dec 21 14:33:51 2020] GET /favicon.ico => generated 85 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Dec 21 14:40:03 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x5576d0ceb6e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5576d0ceb6e0 pid: 2621 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2621)
+spawned uWSGI worker 1 (pid: 2623, cores: 2)
+spawned uWSGI worker 2 (pid: 2624, cores: 2)
+spawned uWSGI worker 3 (pid: 2625, cores: 2)
+spawned uWSGI worker 4 (pid: 2627, cores: 2)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: AnonymousUser   None
+[pid: 2624|app: 0|req: 1/1] 192.168.125.128 () {38 vars in 708 bytes} [Mon Dec 21 14:41:06 2020] GET /index => generated 12723 bytes in 433 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2624|app: 0|req: 2/2] 192.168.125.128 () {38 vars in 644 bytes} [Mon Dec 21 14:41:06 2020] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+sku 新鲜水果
+[pid: 2623|app: 0|req: 1/3] 192.168.125.128 () {40 vars in 758 bytes} [Mon Dec 21 14:41:19 2020] GET /goods/32 => generated 8723 bytes in 267 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2627|app: 0|req: 1/4] 192.168.125.1 () {40 vars in 875 bytes} [Mon Dec 21 14:41:31 2020] GET /index => generated 12769 bytes in 240 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2623|app: 0|req: 2/5] 192.168.125.1 () {40 vars in 811 bytes} [Mon Dec 21 14:41:43 2020] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2623|app: 0|req: 3/6] 192.168.125.1 () {42 vars in 899 bytes} [Mon Dec 21 14:42:17 2020] GET /index => generated 12769 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2627|app: 0|req: 2/7] 127.0.0.1 () {48 vars in 951 bytes} [Mon Dec 21 14:48:33 2020] GET /index => generated 12769 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 2627|app: 0|req: 3/8] 127.0.0.1 () {46 vars in 859 bytes} [Mon Dec 21 14:48:33 2020] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: AnonymousUser   None
+[pid: 2624|app: 0|req: 3/9] 192.168.125.128 () {40 vars in 765 bytes} [Mon Dec 21 14:48:49 2020] GET /index => generated 12723 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2624|app: 0|req: 4/10] 192.168.125.128 () {40 vars in 701 bytes} [Mon Dec 21 14:48:49 2020] GET /favicon.ico => generated 85 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+sku 草莓 500g
+[pid: 2625|app: 0|req: 1/11] 192.168.125.128 () {42 vars in 813 bytes} [Mon Dec 21 14:48:55 2020] GET /goods/1 => generated 8882 bytes in 246 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2627|app: 0|req: 4/12] 192.168.125.128 () {42 vars in 819 bytes} [Mon Dec 21 14:49:21 2020] GET /user/login => generated 2073 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+next_url:  /index
+[pid: 2624|app: 0|req: 5/13] 192.168.125.128 () {50 vars in 1007 bytes} [Mon Dec 21 14:49:28 2020] POST /user/login => generated 0 bytes in 22 msecs (HTTP/1.1 302) 8 headers in 586 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2627|app: 0|req: 5/14] 192.168.125.128 () {44 vars in 925 bytes} [Mon Dec 21 14:49:28 2020] GET /index => generated 12769 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2625|app: 0|req: 2/15] 127.0.0.1 () {48 vars in 951 bytes} [Mon Dec 21 14:52:15 2020] GET /index => generated 12769 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 2627|app: 0|req: 6/16] 127.0.0.1 () {50 vars in 1008 bytes} [Mon Dec 21 14:52:22 2020] GET /user/logout => generated 0 bytes in 4 msecs (HTTP/1.1 302) 4 headers in 210 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: AnonymousUser   None
+[pid: 2623|app: 0|req: 4/17] 127.0.0.1 () {50 vars in 952 bytes} [Mon Dec 21 14:52:22 2020] GET /index => generated 12723 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: AnonymousUser   None
+[pid: 2624|app: 0|req: 6/18] 127.0.0.1 () {52 vars in 983 bytes} [Mon Dec 21 14:52:24 2020] GET /index => generated 12723 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 2625|app: 0|req: 3/19] 127.0.0.1 () {50 vars in 962 bytes} [Mon Dec 21 14:52:29 2020] GET /user/login => generated 2094 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+next_url:  /index
+[pid: 2623|app: 0|req: 5/20] 127.0.0.1 () {58 vars in 1144 bytes} [Mon Dec 21 14:52:30 2020] POST /user/login => generated 0 bytes in 29 msecs (HTTP/1.1 302) 8 headers in 580 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2627|app: 0|req: 7/21] 127.0.0.1 () {52 vars in 1032 bytes} [Mon Dec 21 14:52:30 2020] GET /index => generated 12769 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2627|app: 0|req: 8/22] 127.0.0.1 () {52 vars in 1032 bytes} [Mon Dec 21 14:53:48 2020] GET /index => generated 12769 bytes in 62 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2624|app: 0|req: 7/23] 192.168.125.128 () {40 vars in 845 bytes} [Mon Dec 21 14:53:57 2020] GET /index => generated 12769 bytes in 51 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2623|app: 0|req: 6/24] 192.168.125.128 () {40 vars in 845 bytes} [Mon Dec 21 14:59:35 2020] GET /index => generated 12769 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 2625|app: 0|req: 4/25] 192.168.125.128 () {40 vars in 781 bytes} [Mon Dec 21 14:59:35 2020] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 2623|app: 0|req: 7/26] 192.168.125.128 () {42 vars in 897 bytes} [Mon Dec 21 15:02:14 2020] GET /cart/cart => generated 8210 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 鱼
+[pid: 2624|app: 0|req: 8/27] 192.168.125.128 () {42 vars in 895 bytes} [Mon Dec 21 15:02:24 2020] GET /goods/16 => generated 7261 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 鱼
+[pid: 2627|app: 0|req: 9/28] 192.168.125.128 () {44 vars in 926 bytes} [Mon Dec 21 15:02:26 2020] GET /goods/16 => generated 7261 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 2627|app: 0|req: 10/29] 192.168.125.128 () {42 vars in 893 bytes} [Mon Dec 21 15:02:29 2020] GET /goods/7 => generated 8764 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+7 1
+user_id:  13
+[pid: 2627|app: 0|req: 11/30] 192.168.125.128 () {48 vars in 951 bytes} [Mon Dec 21 15:02:34 2020] POST /cart/add => generated 67 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 0)
+[pid: 2625|app: 0|req: 5/31] 192.168.125.128 () {42 vars in 899 bytes} [Mon Dec 21 15:02:37 2020] GET /cart/cart => generated 8888 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+['7'] sku_ids
+1 ---------------
+草莓 cart_13 7
+b'1'
+[pid: 2625|app: 0|req: 6/32] 192.168.125.128 () {50 vars in 1090 bytes} [Mon Dec 21 15:02:38 2020] POST /order/place => generated 5301 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 2624|app: 0|req: 9/33] 192.168.125.128 () {48 vars in 963 bytes} [Mon Dec 21 15:02:46 2020] POST /order/commit => generated 48 bytes in 116 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 0)
+[pid: 2623|app: 0|req: 8/34] 192.168.125.128 () {42 vars in 909 bytes} [Mon Dec 21 15:02:47 2020] GET /user/order/1 => generated 6042 bytes in 79 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+订单正在支付中...
+[pid: 2627|app: 0|req: 12/35] 192.168.125.128 () {48 vars in 958 bytes} [Mon Dec 21 15:02:49 2020] POST /order/pay => generated 775 bytes in 140 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+订单正在支付中...
+[pid: 2625|app: 0|req: 8/36] 192.168.125.128 () {48 vars in 958 bytes} [Mon Dec 21 15:03:04 2020] POST /order/pay => generated 797 bytes in 58 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+订单正在支付中...
+[pid: 2627|app: 0|req: 13/37] 192.168.125.128 () {48 vars in 958 bytes} [Mon Dec 21 15:03:09 2020] POST /order/pay => generated 783 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 0)
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2624|app: 0|req: 10/38] 192.168.125.128 () {40 vars in 845 bytes} [Mon Dec 21 15:03:23 2020] GET /index => generated 12769 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+等待买家付款...
+等待买家付款...
+[pid: 2623|app: 0|req: 9/39] 192.168.125.128 () {40 vars in 781 bytes} [Mon Dec 21 15:03:23 2020] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+等待买家付款...
+等待买家付款...
+等待买家付款...
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2623|app: 0|req: 10/40] 192.168.125.128 () {42 vars in 876 bytes} [Mon Dec 21 15:03:26 2020] GET /index => generated 12769 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+等待买家付款...
+等待买家付款...
+等待买家付款...
+sku 草莓
+[pid: 2624|app: 0|req: 11/41] 192.168.125.128 () {42 vars in 893 bytes} [Mon Dec 21 15:03:28 2020] GET /goods/7 => generated 8764 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+[pid: 2624|app: 0|req: 12/42] 192.168.125.128 () {42 vars in 899 bytes} [Mon Dec 21 15:03:36 2020] GET /cart/cart => generated 8210 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+等待买家付款...
+等待买家付款...
+[pid: 2624|app: 0|req: 13/43] 192.168.125.128 () {42 vars in 907 bytes} [Mon Dec 21 15:03:37 2020] GET /user/order/1 => generated 6042 bytes in 64 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+等待买家付款...
+订单正在支付中...
+[pid: 2624|app: 0|req: 14/44] 192.168.125.128 () {48 vars in 958 bytes} [Mon Dec 21 15:03:38 2020] POST /order/pay => generated 781 bytes in 140 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Dec 21 15:05:20 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x5602352456e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5602352456e0 pid: 5628 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5628)
+spawned uWSGI worker 1 (pid: 5630, cores: 2)
+spawned uWSGI worker 2 (pid: 5631, cores: 2)
+spawned uWSGI worker 3 (pid: 5632, cores: 2)
+spawned uWSGI worker 4 (pid: 5633, cores: 2)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 5631|app: 0|req: 1/1] 127.0.0.1 () {48 vars in 951 bytes} [Mon Dec 21 15:05:58 2020] GET /index => generated 12769 bytes in 314 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 5631|app: 0|req: 2/2] 127.0.0.1 () {46 vars in 859 bytes} [Mon Dec 21 15:05:59 2020] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 5630|app: 0|req: 1/3] 127.0.0.1 () {46 vars in 938 bytes} [Mon Dec 21 15:06:21 2020] GET /favicon.ico => generated 85 bytes in 195 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 5631|app: 0|req: 3/4] 192.168.125.128 () {40 vars in 845 bytes} [Mon Dec 21 15:06:34 2020] GET /index => generated 12769 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 5630|app: 0|req: 2/5] 192.168.125.128 () {40 vars in 781 bytes} [Mon Dec 21 15:06:35 2020] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 5632|app: 0|req: 1/6] 192.168.125.128 () {42 vars in 876 bytes} [Mon Dec 21 15:11:05 2020] GET /index => generated 12769 bytes in 297 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 5632|app: 0|req: 2/7] 192.168.125.128 () {42 vars in 876 bytes} [Mon Dec 21 15:11:09 2020] GET /index => generated 12769 bytes in 74 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 草莓 500g>, <IndexGoodsBanner: 水蜜桃500g>, <IndexGoodsBanner: 剑鱼5条>, <IndexGoodsBanner: 皮皮虾>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 5631|app: 0|req: 4/8] 192.168.125.128 () {42 vars in 876 bytes} [Mon Dec 21 15:11:12 2020] GET /index => generated 12769 bytes in 71 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Dec 21 15:16:59 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x5557bcf3e6e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5557bcf3e6e0 pid: 2031 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2031)
+spawned uWSGI worker 1 (pid: 2033, cores: 2)
+spawned uWSGI worker 2 (pid: 2034, cores: 2)
+spawned uWSGI worker 3 (pid: 2035, cores: 2)
+spawned uWSGI worker 4 (pid: 2036, cores: 2)
+[pid: 2033|app: 0|req: 1/1] 192.168.125.128 () {40 vars in 845 bytes} [Mon Dec 21 15:18:49 2020] GET /index => generated 27 bytes in 298 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 2035|app: 0|req: 1/2] 192.168.125.128 () {42 vars in 876 bytes} [Mon Dec 21 15:18:55 2020] GET /index => generated 27 bytes in 206 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 2036|app: 0|req: 1/3] 192.168.125.1 () {40 vars in 875 bytes} [Mon Dec 21 15:19:37 2020] GET /index => generated 27 bytes in 182 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 2036|app: 0|req: 2/4] 192.168.125.1 () {40 vars in 875 bytes} [Mon Dec 21 15:20:23 2020] GET /index => generated 27 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Dec 21 15:23:53 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.125.128:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55da426626e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55da426626e0 pid: 3045 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3045)
+spawned uWSGI worker 1 (pid: 3047, cores: 2)
+spawned uWSGI worker 2 (pid: 3048, cores: 2)
+spawned uWSGI worker 3 (pid: 3049, cores: 2)
+spawned uWSGI worker 4 (pid: 3050, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Dec 21 15:29:03 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55edd13f46e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55edd13f46e0 pid: 3178 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3178)
+spawned uWSGI worker 1 (pid: 3180, cores: 2)
+spawned uWSGI worker 2 (pid: 3181, cores: 2)
+spawned uWSGI worker 3 (pid: 3182, cores: 2)
+spawned uWSGI worker 4 (pid: 3184, cores: 2)
+[pid: 3181|app: 0|req: 1/1] 192.168.125.1 () {40 vars in 875 bytes} [Mon Dec 21 15:29:48 2020] GET /login => generated 79 bytes in 178 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 3180|app: 0|req: 1/2] 192.168.125.1 () {40 vars in 885 bytes} [Mon Dec 21 15:30:02 2020] GET /user/index => generated 84 bytes in 179 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 3180|app: 0|req: 2/3] 192.168.125.1 () {42 vars in 899 bytes} [Mon Dec 21 15:30:19 2020] GET /index => generated 27 bytes in 8 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 3184|app: 0|req: 1/4] 192.168.125.1 () {40 vars in 875 bytes} [Mon Dec 21 15:30:41 2020] GET /index => generated 27 bytes in 181 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 3180|app: 0|req: 3/5] 192.168.125.1 () {42 vars in 906 bytes} [Mon Dec 21 15:32:31 2020] GET /index => generated 27 bytes in 2 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 3182|app: 0|req: 1/6] 192.168.125.1 () {50 vars in 1117 bytes} [Mon Dec 21 15:32:41 2020] POST /user/login => generated 27 bytes in 240 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 3180|app: 0|req: 4/7] 127.0.0.1 () {46 vars in 859 bytes} [Mon Dec 21 15:39:02 2020] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 3180|app: 0|req: 5/8] 127.0.0.1 () {48 vars in 967 bytes} [Mon Dec 21 15:39:22 2020] GET /user/register => generated 2550 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 3182|app: 0|req: 2/9] 192.168.125.1 () {42 vars in 899 bytes} [Mon Dec 21 15:40:07 2020] GET /index => generated 27 bytes in 3 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 3180|app: 0|req: 6/10] 192.168.125.1 () {40 vars in 885 bytes} [Mon Dec 21 15:40:30 2020] GET /user/login => generated 2094 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 3182|app: 0|req: 3/11] 192.168.125.1 () {40 vars in 883 bytes} [Mon Dec 21 15:40:45 2020] GET /cart/cart => generated 27 bytes in 6 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 3184|app: 0|req: 2/12] 192.168.125.1 () {40 vars in 887 bytes} [Mon Dec 21 15:41:01 2020] GET /cart/update => generated 0 bytes in 3 msecs (HTTP/1.1 405) 3 headers in 126 bytes (1 switches on core 1)
+sku 美洲鲍鱼
+[pid: 3184|app: 0|req: 3/13] 192.168.125.1 () {40 vars in 881 bytes} [Mon Dec 21 15:41:26 2020] GET /goods/19 => generated 27 bytes in 15 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Dec 21 16:32:33 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x55d7e5c206e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55d7e5c206e0 pid: 3677 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3677)
+spawned uWSGI worker 1 (pid: 3679, cores: 2)
+spawned uWSGI worker 2 (pid: 3680, cores: 2)
+spawned uWSGI worker 3 (pid: 3681, cores: 2)
+spawned uWSGI worker 4 (pid: 3682, cores: 2)
+[pid: 3682|app: 0|req: 1/1] 192.168.125.128 () {40 vars in 847 bytes} [Mon Dec 21 16:33:01 2020] GET /index9 => generated 80 bytes in 348 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 3681|app: 0|req: 1/2] 192.168.125.128 () {40 vars in 782 bytes} [Mon Dec 21 16:33:01 2020] GET /favicon.ico => generated 85 bytes in 194 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 3682|app: 0|req: 2/3] 192.168.125.128 () {40 vars in 783 bytes} [Mon Dec 21 16:34:05 2020] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 2/4] 192.168.125.1 () {42 vars in 899 bytes} [Mon Dec 21 16:40:40 2020] GET /index => generated 6380 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3680|app: 0|req: 1/5] 192.168.125.1 () {42 vars in 906 bytes} [Mon Dec 21 16:42:50 2020] GET /index => generated 6531 bytes in 250 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 3/6] 192.168.125.1 () {42 vars in 906 bytes} [Mon Dec 21 16:44:30 2020] GET /index => generated 6833 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3682|app: 0|req: 3/7] 192.168.125.1 () {42 vars in 906 bytes} [Mon Dec 21 16:46:56 2020] GET /index => generated 7214 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3679|app: 0|req: 1/8] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 16:48:17 2020] GET /goods/44 => generated 7274 bytes in 239 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 2/9] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 16:52:55 2020] GET /index => generated 7214 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 肉
+[pid: 3679|app: 0|req: 3/10] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 16:53:07 2020] GET /goods/41 => generated 6830 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉
+[pid: 3679|app: 0|req: 4/11] 192.168.125.1 () {44 vars in 959 bytes} [Mon Dec 21 16:53:28 2020] GET /goods/41 => generated 6830 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3680|app: 0|req: 2/12] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 16:53:35 2020] GET /goods/43 => generated 6830 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3680|app: 0|req: 3/13] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 16:53:55 2020] GET /index => generated 7214 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 水果
+[pid: 3681|app: 0|req: 4/14] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 16:54:02 2020] GET /goods/42 => generated 7257 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 水果
+[pid: 3682|app: 0|req: 4/15] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 16:54:09 2020] GET /goods/40 => generated 7258 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3681|app: 0|req: 5/16] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 16:54:14 2020] GET /goods/44 => generated 7274 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3682|app: 0|req: 5/17] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 16:56:58 2020] GET /goods/44 => generated 7273 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 葡萄
+[pid: 3679|app: 0|req: 5/18] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 16:57:03 2020] GET /goods/45 => generated 7270 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3679|app: 0|req: 6/19] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 16:57:10 2020] GET /goods/44 => generated 7273 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3682|app: 0|req: 6/20] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 16:57:48 2020] GET /index => generated 7443 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3680|app: 0|req: 4/21] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 16:57:55 2020] GET /goods/44 => generated 7273 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3681|app: 0|req: 6/22] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 16:58:01 2020] GET /goods/44 => generated 7273 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 水果1
+[pid: 3682|app: 0|req: 7/23] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 16:59:06 2020] GET /goods/40 => generated 7259 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3680|app: 0|req: 5/24] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 16:59:39 2020] GET /goods/43 => generated 6830 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉
+[pid: 3680|app: 0|req: 6/25] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 16:59:42 2020] GET /goods/43 => generated 6830 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3681|app: 0|req: 7/26] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 16:59:44 2020] GET /goods/43 => generated 6830 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 水果
+[pid: 3681|app: 0|req: 8/27] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 16:59:49 2020] GET /goods/40 => generated 7258 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 青岛野生海捕大青虾
+[pid: 3680|app: 0|req: 7/28] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:01:35 2020] GET /goods/46 => generated 6842 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 7/29] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:02:51 2020] GET /index => generated 7922 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 葡萄
+[pid: 3679|app: 0|req: 8/30] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:03:04 2020] GET /goods/45 => generated 7270 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3682|app: 0|req: 8/31] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:04:11 2020] GET /goods/44 => generated 7273 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 水果
+[pid: 3681|app: 0|req: 9/32] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:04:57 2020] GET /goods/40 => generated 7257 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3682|app: 0|req: 9/33] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 17:05:14 2020] GET /index => generated 7922 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 9/34] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 17:05:18 2020] GET /index => generated 7922 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 肉
+[pid: 3679|app: 0|req: 10/35] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:05:24 2020] GET /goods/43 => generated 6830 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3680|app: 0|req: 8/36] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 17:06:18 2020] GET /index => generated 7922 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 3680|app: 0|req: 9/37] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:07:08 2020] GET /index => generated 7922 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 11/38] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:07:27 2020] GET /index => generated 7922 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 12/39] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:07:28 2020] GET /index => generated 7922 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 葡萄
+[pid: 3680|app: 0|req: 10/40] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:07:35 2020] GET /goods/45 => generated 7272 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3680|app: 0|req: 11/41] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:07:46 2020] GET /index => generated 7922 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3682|app: 0|req: 10/42] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:08:39 2020] GET /index => generated 8156 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 13/43] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:09:55 2020] GET /index => generated 8154 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 10/44] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:11:22 2020] GET /index => generated 8154 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 14/45] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:12:09 2020] GET /index => generated 7924 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 水果
+[pid: 3681|app: 0|req: 11/46] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:12:39 2020] GET /goods/40 => generated 7259 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉肉
+[pid: 3680|app: 0|req: 12/47] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:12:47 2020] GET /goods/41 => generated 6836 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3680|app: 0|req: 13/48] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:14:01 2020] GET /index => generated 8154 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 鲜芒果
+[pid: 3682|app: 0|req: 11/49] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:15:18 2020] GET /goods/52 => generated 7265 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 苹果
+[pid: 3680|app: 0|req: 14/50] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:15:58 2020] GET /goods/52 => generated 7259 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 苹果
+[pid: 3680|app: 0|req: 15/51] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:16:12 2020] GET /goods/52 => generated 7259 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 蜜橘
+[pid: 3682|app: 0|req: 12/52] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:17:13 2020] GET /goods/53 => generated 7256 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 15/53] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:19:20 2020] GET /index => generated 8693 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3681|app: 0|req: 12/54] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:20:23 2020] GET /goods/51 => generated 7273 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3679|app: 0|req: 16/55] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:20:31 2020] GET /goods/51 => generated 7273 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 13/56] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:22:09 2020] GET /index => generated 8696 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3679|app: 0|req: 17/57] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:22:51 2020] GET /goods/58 => generated 7330 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3679|app: 0|req: 18/58] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:22:54 2020] GET /goods/58 => generated 7330 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓100g
+[pid: 3680|app: 0|req: 16/59] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:22:58 2020] GET /goods/57 => generated 7280 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓100g
+[pid: 3682|app: 0|req: 13/60] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:23:03 2020] GET /goods/57 => generated 7280 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3681|app: 0|req: 14/61] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:23:07 2020] GET /goods/51 => generated 7330 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3681|app: 0|req: 15/62] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:23:08 2020] GET /goods/51 => generated 7330 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓100g
+[pid: 3681|app: 0|req: 16/63] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:23:46 2020] GET /goods/57 => generated 7280 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 17/64] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:24:40 2020] GET /index => generated 8926 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3681|app: 0|req: 18/65] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:24:49 2020] GET /goods/58 => generated 7325 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 19/66] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:25:30 2020] GET /index => generated 8696 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 葡萄
+[pid: 3681|app: 0|req: 20/67] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:25:44 2020] GET /goods/45 => generated 7272 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 21/68] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:26:26 2020] GET /index => generated 8696 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3681|app: 0|req: 22/69] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:27:20 2020] GET /goods/60 => generated 7272 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 19/70] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:28:27 2020] GET /index => generated 8925 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 柠檬
+[pid: 3682|app: 0|req: 14/71] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:28:32 2020] GET /goods/47 => generated 7265 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 3680|app: 0|req: 17/72] 192.168.125.1 () {44 vars in 959 bytes} [Mon Dec 21 17:29:09 2020] GET /goods/58 => generated 0 bytes in 6 msecs (HTTP/1.1 302) 3 headers in 131 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 3680|app: 0|req: 18/73] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 17:29:11 2020] GET /index => generated 27 bytes in 22 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3682|app: 0|req: 15/74] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:30:01 2020] GET /goods/61 => generated 7264 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 葡萄
+[pid: 3679|app: 0|req: 20/75] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:30:27 2020] GET /goods/45 => generated 7269 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 23/76] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:30:46 2020] GET /index => generated 8925 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 24/77] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:32:16 2020] GET /index => generated 8925 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3681|app: 0|req: 25/78] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:32:35 2020] GET /goods/61 => generated 7271 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3679|app: 0|req: 21/79] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:32:48 2020] GET /goods/61 => generated 7271 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3682|app: 0|req: 16/80] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:33:28 2020] GET /goods/61 => generated 7275 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3680|app: 0|req: 19/81] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:33:56 2020] GET /goods/61 => generated 7271 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 26/82] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:34:24 2020] GET /index => generated 8925 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 葡萄
+[pid: 3681|app: 0|req: 27/83] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:34:35 2020] GET /goods/45 => generated 7269 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3682|app: 0|req: 17/84] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:36:40 2020] GET /index => generated 8696 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3682|app: 0|req: 18/85] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:37:36 2020] GET /goods/64 => generated 7255 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3679|app: 0|req: 22/86] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:38:15 2020] GET /goods/64 => generated 7260 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓100g
+[pid: 3679|app: 0|req: 23/87] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:39:21 2020] GET /goods/66 => generated 7265 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3682|app: 0|req: 19/88] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:40:24 2020] GET /index => generated 9154 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3682|app: 0|req: 20/89] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:40:33 2020] GET /goods/66 => generated 7255 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 24/90] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:41:28 2020] GET /index => generated 8925 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 28/91] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:42:10 2020] GET /index => generated 8925 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3680|app: 0|req: 20/92] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:42:16 2020] GET /goods/66 => generated 7277 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3682|app: 0|req: 21/93] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:42:48 2020] GET /goods/66 => generated 7273 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 草莓
+[pid: 3680|app: 0|req: 21/94] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:42:50 2020] GET /goods/66 => generated 7273 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3680|app: 0|req: 22/95] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:42:50 2020] GET /goods/66 => generated 7273 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3682|app: 0|req: 22/96] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 17:42:58 2020] GET /index => generated 8925 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3681|app: 0|req: 29/97] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:01 2020] GET /goods/66 => generated 7271 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 水果
+[pid: 3682|app: 0|req: 23/98] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:43:40 2020] GET /goods/40 => generated 7256 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3679|app: 0|req: 25/99] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:47 2020] GET /goods/43 => generated 6833 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉
+[pid: 3681|app: 0|req: 30/100] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:49 2020] GET /goods/43 => generated 6833 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3681|app: 0|req: 31/101] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:50 2020] GET /goods/43 => generated 6833 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉
+[pid: 3681|app: 0|req: 32/102] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:51 2020] GET /goods/43 => generated 6833 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3680|app: 0|req: 23/103] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:51 2020] GET /goods/43 => generated 6833 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉
+[pid: 3682|app: 0|req: 24/104] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:52 2020] GET /goods/43 => generated 6833 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉
+[pid: 3682|app: 0|req: 25/105] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:52 2020] GET /goods/43 => generated 6833 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3679|app: 0|req: 26/106] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:53 2020] GET /goods/43 => generated 6833 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3681|app: 0|req: 33/107] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:54 2020] GET /goods/43 => generated 6833 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉
+[pid: 3681|app: 0|req: 34/108] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:55 2020] GET /goods/43 => generated 6833 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3679|app: 0|req: 27/109] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:56 2020] GET /goods/43 => generated 6833 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉
+[pid: 3682|app: 0|req: 26/110] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:56 2020] GET /goods/43 => generated 6833 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 肉
+[pid: 3682|app: 0|req: 27/111] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:56 2020] GET /goods/43 => generated 6833 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+sku 肉
+[pid: 3682|app: 0|req: 28/112] 192.168.125.1 () {42 vars in 928 bytes} [Mon Dec 21 17:43:57 2020] GET /goods/43 => generated 6833 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓100g
+[pid: 3681|app: 0|req: 35/113] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:44:55 2020] GET /goods/69 => generated 7276 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3682|app: 0|req: 29/114] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:45:53 2020] GET /index => generated 9165 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 28/115] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 17:46:36 2020] GET /index => generated 9399 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 草莓100g
+[pid: 3681|app: 0|req: 36/116] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:46:43 2020] GET /goods/69 => generated 7286 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 29/117] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:47:11 2020] GET /index => generated 27 bytes in 23 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 0)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3682|app: 0|req: 30/118] 192.168.125.1 () {44 vars in 953 bytes} [Mon Dec 21 17:48:22 2020] GET /index => generated 8925 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+sku 草莓
+[pid: 3682|app: 0|req: 31/119] 192.168.125.1 () {44 vars in 956 bytes} [Mon Dec 21 17:48:40 2020] GET /goods/69 => generated 7271 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: smart6   13
+[pid: 3681|app: 0|req: 37/120] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 17:48:55 2020] GET /index => generated 8925 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+45 1
+user_id:  13
+[pid: 3682|app: 0|req: 32/121] 192.168.125.1 () {48 vars in 982 bytes} [Mon Dec 21 17:48:57 2020] POST /cart/add => generated 67 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 0)
+葡萄
+草莓
+肉
+肉肉
+水果
+[<GoodsSKU: 葡萄>, <GoodsSKU: 草莓>, <GoodsSKU: 肉>, <GoodsSKU: 肉肉>, <GoodsSKU: 水果>]
+[pid: 3682|app: 0|req: 33/122] 192.168.125.1 () {42 vars in 923 bytes} [Mon Dec 21 17:49:00 2020] GET /user/ => generated 4704 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+['45'] sku_ids
+1 ---------------
+葡萄 cart_13 45
+b'1'
+[pid: 3681|app: 0|req: 38/123] 192.168.125.1 () {50 vars in 1120 bytes} [Mon Dec 21 17:49:07 2020] POST /order/place => generated 5299 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 3680|app: 0|req: 24/124] 192.168.125.1 () {42 vars in 939 bytes} [Mon Dec 21 17:49:11 2020] GET /user/order/1 => generated 5373 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+等待买家付款...
+支付成功.............
+trade_no 2020122122001480380501121224
+更新订单
+待评价
+--------------------------->支付完毕
+[pid: 3682|app: 0|req: 34/125] 192.168.125.1 () {48 vars in 992 bytes} [Mon Dec 21 17:49:14 2020] POST /order/check => generated 49 bytes in 25064 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 3679|app: 0|req: 30/126] 192.168.125.1 () {42 vars in 926 bytes} [Mon Dec 21 17:49:50 2020] GET /index => generated 8925 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+Mon Dec 21 17:51:05 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Dec 21 17:51:05 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Dec 21 17:51:05 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Dec 21 17:51:05 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Dec 21 17:53:38 2020] ***
+compiled with version: 7.5.0 on 18 December 2020 01:29:25
+os: Linux-5.4.0-58-generic #64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020
+nodename: zs
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/zs/zs/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/zs/.virtualenvs/dailyfresh/bin/uwsgi
+chdir() to /home/zs/zs/dailyfresh
+your processes number limit is 13348
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080  # 对接ngix时使用 fd 3
+Python version: 3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/zs/.virtualenvs/dailyfresh
+Set PythonHome to /home/zs/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x56250cc32700
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56250cc32700 pid: 2216 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2216)
+spawned uWSGI worker 1 (pid: 2218, cores: 2)
+spawned uWSGI worker 2 (pid: 2219, cores: 2)
+spawned uWSGI worker 3 (pid: 2220, cores: 2)
+spawned uWSGI worker 4 (pid: 2222, cores: 2)
+加载缓存内容:---------------- None
+-------------设置缓存---------->    None
+缓存user.id: AnonymousUser   None
+[pid: 2222|app: 0|req: 1/1] 192.168.125.1 () {40 vars in 769 bytes} [Mon Dec 21 17:53:48 2020] GET /index => generated 8879 bytes in 604 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2218|app: 0|req: 1/2] 192.168.125.1 () {40 vars in 792 bytes} [Mon Dec 21 17:53:54 2020] GET /user/login => generated 2073 bytes in 319 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2218|app: 0|req: 2/3] 192.168.125.1 () {44 vars in 955 bytes} [Mon Dec 21 17:54:03 2020] GET /index => generated 8925 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+sku 草莓
+[pid: 2220|app: 0|req: 1/4] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:54:09 2020] GET /goods/69 => generated 7271 bytes in 345 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+sku 草莓
+[pid: 2218|app: 0|req: 3/5] 192.168.125.1 () {42 vars in 925 bytes} [Mon Dec 21 17:54:17 2020] GET /goods/69 => generated 7271 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2219|app: 0|req: 1/6] 192.168.125.1 () {42 vars in 930 bytes} [Mon Dec 21 17:54:21 2020] GET /cart/cart => generated 8886 bytes in 360 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2219|app: 0|req: 2/7] 192.168.125.1 () {48 vars in 993 bytes} [Mon Dec 21 17:54:27 2020] POST /order/commit => generated 48 bytes in 121 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+订单正在支付中...
+[pid: 2222|app: 0|req: 2/8] 192.168.125.1 () {48 vars in 988 bytes} [Mon Dec 21 17:54:29 2020] POST /order/pay => generated 777 bytes in 144 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+[pid: 2218|app: 0|req: 4/9] 192.168.125.1 () {44 vars in 971 bytes} [Mon Dec 21 17:54:56 2020] GET /user/order/1 => generated 5705 bytes in 66 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+草莓
+肉
+肉肉
+水果
+[pid: 2220|app: 0|req: 2/10] 192.168.125.1 () {42 vars in 919 bytes} [Mon Dec 21 17:55:05 2020] GET /user/ => generated 27 bytes in 20 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 1)
+草莓
+肉
+肉肉
+水果
+[pid: 2218|app: 0|req: 5/11] 192.168.125.1 () {44 vars in 950 bytes} [Mon Dec 21 17:55:30 2020] GET /user/ => generated 27 bytes in 15 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2219|app: 0|req: 3/12] 192.168.125.1 () {42 vars in 919 bytes} [Mon Dec 21 17:55:49 2020] GET /index => generated 8925 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: smart6   13
+[pid: 2218|app: 0|req: 6/13] 192.168.125.1 () {42 vars in 922 bytes} [Mon Dec 21 17:55:52 2020] GET /index => generated 8925 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+加载缓存内容:---------------- {'types': [<GoodsType: 新鲜水果>, <GoodsType: 海鲜产品>, <GoodsType: 猪肉羊肉>, <GoodsType: 禽类蛋品>, <GoodsType: 新鲜蔬菜>, <GoodsType: 速冻食品>], 'goods_banners': [<IndexGoodsBanner: 水果>, <IndexGoodsBanner: 水果>, <IndexGoodsBanner: 肉肉>, <IndexGoodsBanner: 肉>], 'promotion_banners': [<IndexPromotionBanner: 薯片>, <IndexPromotionBanner: 0元购>]}
+缓存user.id: AnonymousUser   None
+[pid: 2219|app: 0|req: 4/14] 192.168.125.1 () {42 vars in 875 bytes} [Mon Dec 21 17:55:53 2020] GET /index => generated 8879 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+next_url:  /index
+[pid: 2220|app: 0|req: 3/15] 192.168.125.1 () {50 vars in 1073 bytes} [Mon Dec 21 17:55:56 2020] POST /user/login => generated 0 bytes in 22 msecs (HTTP/1.1 302) 8 headers in 586 bytes (1 switches on core 0)
+[pid: 2220|app: 0|req: 4/16] 192.168.125.1 () {42 vars in 927 bytes} [Mon Dec 21 17:55:57 2020] GET /cart/cart => generated 8210 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 2219|app: 0|req: 5/17] 192.168.125.1 () {42 vars in 940 bytes} [Mon Dec 21 17:56:01 2020] GET /user/order/5 => generated 5041 bytes in 59 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2219|app: 0|req: 6/18] 192.168.125.1 () {42 vars in 940 bytes} [Mon Dec 21 17:56:02 2020] GET /user/order/9 => generated 5046 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 2218|app: 0|req: 7/19] 192.168.125.1 () {42 vars in 943 bytes} [Mon Dec 21 17:56:03 2020] GET /user/order/12 => generated 4503 bytes in 37 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2219|app: 0|req: 7/20] 192.168.125.1 () {42 vars in 941 bytes} [Mon Dec 21 17:56:06 2020] GET /user/order/8 => generated 5043 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2219|app: 0|req: 8/21] 192.168.125.1 () {42 vars in 940 bytes} [Mon Dec 21 17:56:08 2020] GET /user/order/4 => generated 5041 bytes in 37 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 2220|app: 0|req: 5/22] 192.168.125.1 () {42 vars in 940 bytes} [Mon Dec 21 17:56:09 2020] GET /user/order/1 => generated 5705 bytes in 61 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 2222|app: 0|req: 3/23] 192.168.125.1 () {42 vars in 940 bytes} [Mon Dec 21 17:56:12 2020] GET /user/order/3 => generated 5041 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2219|app: 0|req: 9/24] 192.168.125.1 () {42 vars in 940 bytes} [Mon Dec 21 17:56:14 2020] GET /user/order/6 => generated 5041 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2219|app: 0|req: 10/25] 192.168.125.1 () {42 vars in 940 bytes} [Mon Dec 21 17:56:17 2020] GET /user/order/2 => generated 5041 bytes in 36 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 2220|app: 0|req: 6/26] 192.168.125.1 () {42 vars in 940 bytes} [Mon Dec 21 17:56:21 2020] GET /user/address => generated 3241 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+水果
+基围虾
+草莓
+肉
+肉肉
+[<GoodsSKU: 水果>, <GoodsSKU: 基围虾>, <GoodsSKU: 草莓>, <GoodsSKU: 肉>, <GoodsSKU: 肉肉>]
+[pid: 2222|app: 0|req: 4/27] 192.168.125.1 () {42 vars in 926 bytes} [Mon Dec 21 17:56:22 2020] GET /user/ => generated 4709 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 2218|app: 0|req: 8/28] 192.168.125.1 () {42 vars in 940 bytes} [Mon Dec 21 17:56:24 2020] GET /user/address => generated 3241 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+水果
+基围虾
+草莓
+肉
+肉肉
+[<GoodsSKU: 水果>, <GoodsSKU: 基围虾>, <GoodsSKU: 草莓>, <GoodsSKU: 肉>, <GoodsSKU: 肉肉>]
+[pid: 2218|app: 0|req: 9/29] 192.168.125.1 () {42 vars in 919 bytes} [Mon Dec 21 17:56:27 2020] GET /user/ => generated 4709 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2218|app: 0|req: 10/30] 192.168.125.1 () {42 vars in 937 bytes} [Mon Dec 21 17:56:29 2020] GET /user/order/1 => generated 5705 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+水果
+基围虾
+草莓
+肉
+肉肉
+[<GoodsSKU: 水果>, <GoodsSKU: 基围虾>, <GoodsSKU: 草莓>, <GoodsSKU: 肉>, <GoodsSKU: 肉肉>]
+[pid: 2218|app: 0|req: 11/31] 192.168.125.1 () {42 vars in 919 bytes} [Mon Dec 21 17:56:33 2020] GET /user/ => generated 4709 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2219|app: 0|req: 11/32] 192.168.125.1 () {40 vars in 811 bytes} [Mon Dec 21 17:56:44 2020] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Mon Dec 21 17:56:55 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Dec 21 17:56:55 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Dec 21 17:56:55 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
